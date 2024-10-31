@@ -4,7 +4,7 @@ let chanceArea = document.getElementById("chance-area");
 let userInput = document.getElementById("user-input");
 let playBtn = document.getElementById("play-btn");
 let restBtn = document.getElementById("rest-btn");
-let chances = 5; // 기회 5번
+let chances = 10; // 기회 5번
 let history = []; // 입력한 숫자를 확인하기 위해 배열을 저장할 변수 history 생성
 let gameOver = false;
 
@@ -77,7 +77,7 @@ function restart(){
   resultArea.textContent = "정답은?";
   chanceArea.textContent = "남은 기회";
   userInput.value = "";
-  chances = 5;
+  chances = 10;
   history = [];
   pickRandomNum(); // 새로운 번호 생성
 }
